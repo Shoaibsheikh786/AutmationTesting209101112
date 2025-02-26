@@ -16,7 +16,7 @@ public class IFrame1 {
 	driver.switchTo().frame("mce_0_ifr"); 
     WebElement ele=	driver.findElement(By.xpath("//body[@id='tinymce']/child::p"));
     ele.sendKeys("this is new text");
-    driver.switchTo().defaultContent();
+    driver.switchTo().parentFrame();
     driver.findElement(By.xpath("//a[text()='Automation Training']")).click();
 	}
 
