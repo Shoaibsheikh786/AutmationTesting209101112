@@ -21,7 +21,7 @@ public class Wait3 {
 		
 		wait.until(ExpectedConditions.
 				presenceOfElementLocated(By.xpath("//input[@name='email']")))
-		.click();
+		.sendKeys("abc@gmail.com");
 		
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("pass");
 	}
