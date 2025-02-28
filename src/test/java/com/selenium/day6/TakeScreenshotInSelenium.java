@@ -24,7 +24,7 @@ public class TakeScreenshotInSelenium {
 		File scrnShot= tk.getScreenshotAs(OutputType.FILE);
 		
 		//3. Copy the screenshot from ram to HD..
-		FileUtils.copyFile(scrnShot, new File("./myScnShot.png"));
+		FileUtils.copyFile(scrnShot, new File("./Myscrnshot/myScnShot.png"));
 		
 	
 	}
