@@ -16,7 +16,6 @@ public class WindowHandles {
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://practice.expandtesting.com/windows");
 		WebElement ele=driver.findElement(By.xpath("//a[text()='Click Here']"));
-		
 	//	System.out.println(cWind);
 		
 		driver.findElement(By.xpath("//a[text()='Click Here']")).click();
@@ -43,10 +42,14 @@ public class WindowHandles {
 		
 		driver.quit();
 		
-	//	driver.switchTo().window(cWind);
+		driver.switchTo().window(cWind);
 		
-		//driver.clos();
+		//driver.close();
 		//driver.quit();
+		
+		
+		
+		
 		
 		
 		
