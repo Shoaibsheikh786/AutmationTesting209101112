@@ -1,4 +1,4 @@
-package com.selenium.day9;
+package com.selenium.day9_10;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

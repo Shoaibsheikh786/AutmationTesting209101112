@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.day9.Class2">
+      <class name="com.selenium.day11.SoftAssertion1">
         <methods>
-          <include name="test2"/>
+          <include name="test1HA"/>
         </methods>
-      </class> <!-- com.selenium.day9.Class2 -->
+      </class> <!-- com.selenium.day11.SoftAssertion1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
