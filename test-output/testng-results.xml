@@ -1,59 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-07T13:24:30 IST" name="Default suite" finished-at="2025-03-07T13:24:30 IST" duration-ms="135">
+  <suite started-at="2025-03-08T12:38:24 IST" name="Default suite" finished-at="2025-03-08T12:38:24 IST" duration-ms="100">
     <groups>
     </groups>
-    <test started-at="2025-03-07T13:24:30 IST" name="Default test" finished-at="2025-03-07T13:24:30 IST" duration-ms="135">
-      <class name="com.selenium.day11.SoftAssertion1">
-        <test-method signature="test1HA()[pri:0, instance:com.selenium.day11.SoftAssertion1@4116aac9]" started-at="2025-03-07T13:24:30 IST" name="test1HA" finished-at="2025-03-07T13:24:30 IST" duration-ms="29" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Result is not Equal expected [12] but found [10]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Result is not Equal expected [12] but found [10]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at com.selenium.day11.SoftAssertion1.test1HA(SoftAssertion1.java:13)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2025-03-08T12:38:24 IST" name="Default test" finished-at="2025-03-08T12:38:24 IST" duration-ms="100">
+      <class name="com.selenium.day12.OtherAttributes">
+        <test-method signature="login()[pri:0, instance:com.selenium.day12.OtherAttributes@3b0090a4]" started-at="2025-03-08T12:38:24 IST" name="login" finished-at="2025-03-08T12:38:24 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1HA -->
-      </class> <!-- com.selenium.day11.SoftAssertion1 -->
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:0, instance:com.selenium.day12.OtherAttributes@3b0090a4]" started-at="2025-03-08T12:38:24 IST" name="logout" finished-at="2025-03-08T12:38:24 IST" depends-on-methods="com.selenium.day12.OtherAttributes.login" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.selenium.day12.OtherAttributes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
