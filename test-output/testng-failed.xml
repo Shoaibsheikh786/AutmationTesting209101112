@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.day12.OtherAttributes">
+      <class name="com.selenium.day13.Listenersss">
         <methods>
-          <include name="logout"/>
-          <include name="login"/>
+          <include name="mytest1"/>
         </methods>
-      </class> <!-- com.selenium.day12.OtherAttributes -->
+      </class> <!-- com.selenium.day13.Listenersss -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

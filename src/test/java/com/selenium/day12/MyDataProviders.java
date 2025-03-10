@@ -17,7 +17,8 @@ public class MyDataProviders {
      }
 	@DataProvider(name="mydata")
 	public String[][] loginData2()
-	{
+	{  
+		
 		String data[][]= {
 				{"Hello","World"},
 				{"Hi","java"},
