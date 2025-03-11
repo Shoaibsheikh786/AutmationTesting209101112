@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="Test" parallel="classes">
+    <classes>
+      <class name="com.selenium.day14.PTests"/>
+      <class name="com.selenium.day14.PTest2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
