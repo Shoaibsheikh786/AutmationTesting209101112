@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="./Features/Login.feature",
-		glue="stepDefinition"  ,  //name of package 
-		dryRun=false
+		features="./Features/HooksFeatrue.feature",
+		glue={"stepDefinition","applicationHooks"}   //name of package 
+		
 		)
 public class TestRunner {
 
