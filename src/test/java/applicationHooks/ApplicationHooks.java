@@ -1,34 +1,38 @@
 package applicationHooks;
 
 import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
+import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {
 	
-  @Before()
+  @Before("@reg")
   public void setUp()
   {
-	  System.out.println("Open Chrome");     //driver =new ChromeDriver
-	  System.out.println("navigate to ecom.com");   //driver.get(url);
+	  System.out.println("################");     //driver =new ChromeDriver
+	  System.out.println("#################");   //driver.get(url);
   }
   
   @After()
-  public void tearDown()
+  public void tearDown(Scenario sce)
   {
 	  System.out.println("CLOSE THE BROWSER");   //driver.close();
+	  String str=sce.getName();
+	  System.out.println("Scenario "+str);
+	  System.out.println(sce.getStatus());
   }
   
-  @BeforeStep
-  public void bfStep()
-  {
-	  System.out.println("TAKE SCREENSHOT FOR EACH STEP");
-  }
-  @AfterStep
-  public void afterStep()
-  {
-	  System.out.println("This is after step");
-  }
+  
+  
+//  @BeforeStep
+//  public void bfStep()
+//  {
+//	  System.out.println("TAKE SCREENSHOT FOR EACH STEP");
+//  }
+//  @AfterStep
+//  public void afterStep()
+//  {
+//	  System.out.println("This is after step");
+//  }
 
 }

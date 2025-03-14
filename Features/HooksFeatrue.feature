@@ -1,5 +1,6 @@
 Feature: Hooks
 
+@tag1
 Scenario: verify we are able to serach products 
 
 When user click on serach field 

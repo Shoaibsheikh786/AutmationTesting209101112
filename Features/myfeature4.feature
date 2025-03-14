@@ -9,7 +9,7 @@ And user provided input as flower
 And user click on serach btn 
 Then user can see the flower list
 
-@smoke @wip
+@smoke 
 Scenario: verify we are able to serach products 
 Given user open chrome Browser 
 And user navigate the url ecom
